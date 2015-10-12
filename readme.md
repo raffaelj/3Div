@@ -82,6 +82,7 @@ der 3D-Darstellung im Firefox-Inspektor (3D-/Seitenansicht)
 
 ### To Do
 3Div ist mein erstes Javascript-Projekt, weshalb die Entwicklung nur langsam vorangeht und noch einige Fehler zu beheben, Sicherheitslücken zu schließen und Features hinzuzufügen sind.
+
 - [ ] selektierte Elemente kopieren
 - [ ] Rückgängig
 - [ ] Direkteingabe um Objekt zu ändern --> bis jetzt Firefox-Entwickler-Tools
