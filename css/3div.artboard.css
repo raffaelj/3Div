@@ -1,0 +1,165 @@
+html,body {
+  /* font-size:1px; */
+  /* line-height:1px; */
+  margin:0px;
+  padding:0px;
+  width:100%;
+}
+
+*[id^="bID_"],
+.block{
+	margin:0px;
+	padding:0px;
+	display:block;
+	width:16px;
+	height:16px;
+	background-color:#cccccc;
+	text-align:center;
+	position:absolute;
+}
+*[id^="bID_"] p,
+.block p{
+	font-size:12px;
+	line-height:12px;
+}
+.selektiert,
+.ui-selected,
+.ui-selecting{
+	/* box-shadow: none|h-shadow v-shadow blur spread color |inset|initial|inherit; */
+	box-shadow:0px 0px 2px 2px rgba(0,0,0,.5) inset;
+	z-index:70;
+	/* cursor:move; */
+}
+.ui-state-highlight { height: 1.5em; line-height: 1.2em; }
+
+.ui-selectable-helper{
+	border:1px dotted #000;
+	position:absolute;
+	z-index:100;
+}
+
+div[data-ebene]{
+	width:0;
+	height:0;
+	background-color:transparent;
+}
+.ausgeblendet{
+	visibility:none;
+}
+.ddiv_invisible{display:none;}
+
+main{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+}
+.grid{
+	width:100%;
+	height:100%;
+	background-color:#ddd;
+	background-image:
+		linear-gradient(#efefef 2px, transparent 2px),
+		linear-gradient(90deg, #efefef 2px, transparent 2px),
+		linear-gradient(#efefef 1px, transparent 1px),
+		linear-gradient(90deg, #efefef 1px, transparent 1px)
+	;
+	background-size:
+		100px 100px,
+		100px 100px,
+		20px 20px,
+		20px 20px
+	;
+	background-position:
+		-1px -1px,
+		-1px -1px,
+		0px 0px,
+		0px 0px
+	;
+}
+
+#ddiv_sidebar{/* 
+	position:fixed !important;
+	top:0 !important; */
+	position:fixed;
+	top:0;
+	right:0;
+	/* float:left; */
+	border:1px solid #ddd;
+	/* border-radius:5px; */
+	font-size:16px;
+	line-height:16px;
+	background-color:rgba(255,255,255,.9);
+	z-index:80;
+	width:250px;
+	height:100%;
+	padding:10px;
+	margin-bottom:200px;
+	overflow:scroll;
+}
+#ddiv_form {
+	width:100%;
+}
+#ddiv_form fieldset{
+	margin:10px 0px;
+	padding:10px 3px;
+	border-radius:5px;
+	border:1px solid #ccc;
+}
+#ddiv_form fieldset legend{
+	padding:0px 5px;
+}
+#ddiv_form label{
+	display:block;
+	margin-bottom:5px;
+	/* padding-right:5px; */
+	float:left;
+	clear:left;
+	width:50%;
+	text-align:right;
+}
+#ddiv_form input,
+#ddiv_form select{
+	display:block;
+	margin-bottom:5px;
+	float:right;
+	clear:right;
+	width:45%;
+	text-align:left;
+}
+/* #ddiv_form input[type=number]{
+	width:50px;
+} */
+#ddiv_form input[disabled=disabled],
+#ddiv_form input[disabled=disabled] + label{
+display:none;
+}
+#ddiv_form button{
+	display:block;
+	clear:both;
+	width:90%;
+	margin:5px auto;
+	background-color:#efefef;
+	border-radius:5px;
+	border:1px solid #ddd; 
+}
+#ddiv_form button:hover,
+#ddiv_form button:focus{
+	background-color:#ccc;
+}
+#ddiv_form button:active{
+	background:rgb(0,128,128);
+	color:#fefefe;
+}
+#form_elem option[value=span]{background-color:#67E46F}/* grün */
+#form_elem option[value=div]{background-color:#5DC8CD}/* türkis */
+#form_elem option[value=a]{background-color:#123EAB}/* dunkelblau */
+#form_elem option[value=img]{background-color:#FFB473}/* orange */
+#form_elem option[value=table]{background-color:#FF0700}/* rot */
+#form_elem option[value=p]{background-color:#888}/* grau */
+#form_elem option[value=ul]{background-color:#4671D5}/* mittel-dunkelblau */
+
+#ddiv_form p{
+	clear:both;
+}
+

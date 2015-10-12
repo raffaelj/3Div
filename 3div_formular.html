@@ -1,0 +1,74 @@
+<form id="ddiv_form">
+	<fieldset id="form_laden_speichern">
+		<legend>Laden/Speichern</legend>
+		<input id="ddiv_form_sketch_name" name="ddiv_form_sketch_name" type="text" maxlength="16" value="demo" title="nur Zahlen und Buchstaben, alles kleingeschrieben, keine Leerzeichen" />
+		<label for="ddiv_form_sketch_name">Entwurfsname: </label>
+		<button type="button" id="ddiv_form_safe_file" name="ddiv_form_safe_file" value="ddiv_form_safe_file">speichern</button>
+		<button type="button" id="ddiv_form_load_file" name="ddiv_form_load_file" value="ddiv_form_load_file">gespeicherten Entwurf laden</button>
+	</fieldset>
+	
+	<fieldset id="ddiv_form_fieldset_new_object">
+		<legend>neues Objekt einfügen</legend>
+		<select id="object_type" name="object_type">
+			<option value="cuboid">Quader</option>
+			<option value="circle">Kreis</option>
+			<option value="spiral" disabled="disabled">Wendel</option>
+			<option value="sphere" disabled="disabled">Kugel</option>
+			<!--<option value="kreis">Schlauch</option>--><!-- wird durch Kreis mit Ebenen abgedeckt -->
+		</select>
+		<label for="object_type">Objektart: </label>
+		
+		<input id="form_oname" name="oname" type="text" size="15" placeholder="Objekt benennen" disabled="disabled" />
+		<label for="form_oname">Name: </label>
+		
+		<!--<input id="form_elem" name="elem" type="text" />-->
+		<select id="form_elem" name="elem">
+			<option value="div">div (türkis)</option>
+			<option value="span">span (grün)</option>
+			<option value="a">a (dunkelblau)</option>
+			<option value="img">img (orange)</option>
+			<option value="table">table (rot)</option>
+			<option value="ul">ul (blau)</option>
+			<option value="p">p (grau)</option>
+			<!-- + weitere -->
+		</select>
+		<label for="form_elem" title="ändert Farbe in Seitenansicht">Element: </label>
+		
+		<input id="form_x" name="x" type="number" size="3" value="100" min="0" />
+		<label for="form_x">x: </label>
+		
+		<input id="form_y" name="y" type="number" value="100" min="0" />
+		<label for="form_y">y: </label>
+		
+		<input id="form_z" name="z" type="number" value="1" min="1" max="50" />
+		<label for="form_z">z (Ebene): </label>
+		
+		<input id="form_b" name="b" type="number" value="15" min="5" />
+		<label for="form_b">Block-Breite: </label>
+		
+		<input id="form_h" name="h" type="number" value="15" min="5" />
+		<label for="form_h">Block-Höhe:  </label>
+		
+		<input id="form_farbe" name="color" type="color" value="#5ADBEE" />
+		<label for="form_farbe" title="Draufsicht">Farbe:  </label>
+		
+		<p><b>weitere Optionen:</b></p>
+		
+		<input id="layers" name="layers" type="number" value="1" min="1" max="50"  />
+		<label for="layers">Ebenen/Schichten:  </label>
+		
+		<input id="form_radius" name="radius" type="number" value="50" min="1" />
+		<label for="form_radius">Radius: </label>
+		
+		<input id="ddiv_form_steps" name="ddiv_form_steps" type="number" value="8" min="0" />
+		<label for="ddiv_form_steps" title="auf Kreisachse">Anzahl Blöcke: </label>
+		
+		<input id="form_windungen" name="windungen" type="number" value="1" disabled="disabled" min="1" />
+		<label for="form_windungen">Windungen: </label>
+		
+		<input id="ddiv_form_inner_html" name="ddiv_form_inner_html" type="text" placeholder="Text einfügen" disabled="disabled" />
+		<label for="form_inhalt">Inhalt:  </label>
+		
+		<button type="button" id="ddiv_form_add_object">Objekt einfügen</button>
+	</fieldset>
+</form>

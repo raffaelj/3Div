@@ -1,0 +1,174 @@
+#ddiv_help_container{
+	position:absolute;
+	top:50px;
+	left:50px;
+	right:50px;
+	bottom:50px;
+	background-color:rgba(255,255,255,.9);
+	padding:1.5em 5px 1em 1em;
+	box-shadow:0px 5px 5px rgba(0,0,0,.2);
+}
+#ddiv_help_content{
+	overflow-y:scroll;
+	height:100%;
+	padding:0 1em;
+	background-color:#fff;
+}
+
+kbd{
+	padding: 0.1em 0.6em;
+	border: 1px solid #CCC;
+	font-size: 11px;
+	font-family: Arial,Helvetica,sans-serif;
+	background-color: #F7F7F7;
+	color: #333;
+	box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 2px #FFF inset;
+	border-radius: 3px;
+	display: inline-block;
+	margin: 0px 0.1em;
+	text-shadow: 0px 1px 0px #FFF;
+	line-height: 1.4;
+	white-space: nowrap;
+}
+
+#ddiv_overlay *{
+	z-index:9999;
+}
+
+/***** Icons ****/
+.ddiv_icon_hide,
+.ddiv_icon_help,
+.ddiv_icon_grid{
+	position:fixed;
+	top:5px;
+}
+.ddiv_icon_hide{
+	right:40px;
+	margin:2px 0 0;
+}
+
+.ddiv_icon_hide:before,
+.ddiv_icon_hide:after{
+    content:"";
+    position:absolute;
+    top:50%;
+    left:0;
+}
+.ddiv_icon_hide:before {
+    left:3px;
+    width:14px;
+    height:14px;
+    margin-top:-8px;
+    background:#555;
+    -webkit-border-top-left-radius:12px;
+    -webkit-border-bottom-right-radius:12px;
+    -moz-border-radius:12px 0 12px 0;
+    border-radius:12px 0 12px 0;
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+    -o-transform:rotate(45deg);
+    transform:rotate(45deg);
+}
+
+.ddiv_icon_hide:after {
+    left:6px;
+    width:4px;
+    height:4px;
+    border:2px solid #fff;
+    margin-top:-5px;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    border-radius:6px;
+}
+
+
+.ddiv_icon_help {
+    color:#2385BA;
+	right:65px;
+}
+
+.ddiv_icon_help:before {
+    position:absolute;
+	top: 50%;
+	content:"?";
+    left:3px;
+    width:16px;
+    height:16px;
+    margin-top:-8px;
+    font-size:14px;
+    font-weight:bold;
+    line-height:15px;
+    text-align:center;
+    color:#fff;
+    background:#555;
+    /* css3 */
+    -webkit-border-radius:16px;
+    -moz-border-radius:16px;
+    border-radius:16px;
+}
+.ddiv_icon_grid{
+	right:75px;
+    width:14px;
+    height:2px;
+    border-width:6px 0;
+    border-style:double;
+    border-color:#555;
+	margin:4px 0 0;
+}
+.ddiv_icon_grid:before,
+.ddiv_icon_grid:after {
+	content:"";
+    position: absolute;
+	margin: -6px 0 0;
+	/* margin: 8px 0 0; */
+	/* top: 50%; */
+    left:9px;
+    /* width:12px; */
+    width:4px;
+    height:12px;
+    /* border-width:6px 0; */
+    border-width:0 0 0 6px;
+    border-style:double;
+    border-color:#555;
+    /* background:transparent; */
+}
+
+.ddiv_icon_grid:after {
+    left:1px;
+    width:2px;
+    /* border-width:0 6px;
+    border-style:double; */
+}
+
+.ddiv_icon_close{
+	position:absolute;
+	top:5px;
+	right:5px;
+	height:16px;
+	width:16px;
+	border:1px solid #555;
+	border-radius:2px;
+}
+.ddiv_icon_close:before{
+	position:absolute;
+	/* left:-16px; */
+	left:4px;
+	top:-3px;
+	content:"x";
+	font-size:14px;
+	line-height:18px;
+	font-style:sans-serif;
+	/* margin:0 auto; */
+}
+
+/* .ddiv_icon_hide:hover, */
+.ddiv_icon_hide:hover:before,
+.ddiv_icon_hide:hover:after,
+/* .ddiv_icon_help:hover, */
+.ddiv_icon_help:hover:before,
+.ddiv_icon_help:hover:after,
+.ddiv_icon_grid:hover,
+.ddiv_icon_close:hover{
+	background-color:#ddd;
+}
