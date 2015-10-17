@@ -34,14 +34,14 @@ Die [Anleitung](docs/manual.md) ist in den Docs-Ordner verschoben.
 - [x] Kreisfunktion
 - [ ] Wendelfunktion
 - [ ] Kugelfunktion
-- [x] resizable --> Developer-Tools
-- [x] Quellcode serverseitig ausgeben, sodass er mit <kbd>Strg</kbd>+<kbd>U</kbd> sichtbar ist --> Reload nötig
+- [x] resizable --> Developer-Tools --> width und height anpassen
+- [ ] Quellcode serverseitig ausgeben, sodass er mit <kbd>Strg</kbd>+<kbd>U</kbd> sichtbar ist --> Reload nötig
 - [x] Tastaturkürzel
 - [ ] benutzerdefiniertes CSS hinzufügen
 - [ ] Node-Reihenfolge ändern --> "oben"/Überlagerung auf selber Ebene
 - [ ] Layer-Ebene am Ende --> "oben"/Überlagerung auf verschiedenen Ebenen
 - [x] Autoload Demo-Datei
-- [x] Warnung beim Verlassen der seite
+- [x] Warnung beim Verlassen der seite --> nervt aber während Entwicklung...
 - [ ] Raster-Icon als reines CSS-Icon --> momentan noch in 3D-Ansicht sichtbar
 - [ ] Formular in Javascript auslagern
 - [ ] jQuery gegen reines Javascript ersetzen
@@ -52,6 +52,9 @@ Die [Anleitung](docs/manual.md) ist in den Docs-Ordner verschoben.
 - [ ] Impressum
 - [ ] Datenschutz-Hinweise
 - [ ] Hausordnung -> nichts illegales veröffentlichen, kein Mobbing etc.
+- [ ] evtl. Objekte rotieren mit CSS-Transform --> ist aber in 3D-Ansicht nicht gedreht
+- [ ] Link generieren um Entwurf teilen zu können (ähnlich wie bei Mozilla Webmaker: [Thimble](https://thimble.mozilla.org/), [X-Ray-Goggles](https://webmaker.org/goggles))
+- [ ] Sammlung mit Internetseiten, die spannend in 3D aussehen
 
 Autor des 3Div-Scripts: Raffael Jesche
 Quellcode: [3Div](https://github.com/raffaelj/3div) - [Fork me on Github](https://github.com/raffaelj/3div)
