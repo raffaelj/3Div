@@ -996,7 +996,7 @@ function hideHelp(){
 }
 
 //einmalig beim Start laden
-txtRequestToHelp("readme.md");
+txtRequestToHelp("docs/manual.md");
 
 function txtRequestToHelp(url){
 	var request = new XMLHttpRequest();
