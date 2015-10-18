@@ -977,7 +977,7 @@ function groupNodes(){
 marked.setOptions({
   renderer: new marked.Renderer(),
   gfm: true,
-  tables: false,
+  tables: true,
   breaks: true,
   pedantic: false,
   sanitize: false,

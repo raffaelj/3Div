@@ -41,6 +41,7 @@ kbd{
 .ddiv_icon_grid{
 	position:fixed;
 	top:5px;
+	cursor:pointer;
 }
 .ddiv_icon_hide{
 	right:40px;
@@ -149,6 +150,7 @@ kbd{
 	width:16px;
 	border:1px solid #555;
 	border-radius:2px;
+	cursor:pointer;
 }
 .ddiv_icon_close:before{
 	position:absolute;

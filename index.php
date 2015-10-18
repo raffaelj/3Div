@@ -5,6 +5,7 @@
 	<title>3Div-Entwurf</title>
 	<!-- zur besseren Übersicht noch mehrere CSS-Dateien, soll später in 
 		eine Datei oder in 3div.js ausgelagert werden -->
+	<link rel="icon" type="image/x-icon" href="img/favicon.ico" />
 	<link rel="stylesheet" href="css/3div.artboard.css" type="text/css" />
 	<link rel="stylesheet" href="css/3div.extra.css" type="text/css" />
 </head>
