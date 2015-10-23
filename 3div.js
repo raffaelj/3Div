@@ -26,6 +26,19 @@ window.onbeforeunload = function() {
     return 'Hast du auch alles abgespeichert?';
 }
 
+// Query-String auslesen
+// Quelle: https://css-tricks.com/snippets/javascript/get-url-variables/
+function getQueryVariable(variable)
+{
+       var query = window.location.search.substring(1);
+       var vars = query.split("&");
+       for (var i=0;i<vars.length;i++) {
+               var pair = vars[i].split("=");
+               if(pair[0] == variable){return pair[1];}
+       }
+       return(false);
+}
+
 function create3Div(){
 	var d = document;
 	//Zeichenfläche erstellen
@@ -86,8 +99,17 @@ function create3Div(){
 	helpContainer.appendChild(iconClose);
 	helpContainer.appendChild(helpContent);
 	
+	// Query-Sting lesen, um verlinkten Entwurf zu laden
+	// wenn kein Entwurf verlinkt, wird "demo" geladen
+	var file = getQueryVariable("file");
+	if (file == false){
+		document.getElementById("ddiv_form_sketch_name").value = "demo";
+	}
+	else {
+		document.getElementById("ddiv_form_sketch_name").value = file;
+	}
 	
-	//Demo-Datei beim Start laden
+	// Datei beim Start laden
 	phpToNodeList();
 }
 
