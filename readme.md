@@ -1,8 +1,7 @@
 3Div
 ====
 
-Idee
-----
+## Idee
 3Div ist ein 2D-Editor für die 3D-Untersuchung von Firefox, bzw. das leider nicht mehr weiterentwickelte Firefox-Addon Tilt.
 
 Die Idee dahinter ist, auf spielerische Weise Quellcodes zu erkunden und gleichzeitig 3D-Modelle zu erstellen. Das Script selbst dient dabei als Basis um in verschiedene Richtungen damit weiter arbeiten zu können, z. B.:
@@ -15,6 +14,17 @@ Die Idee dahinter ist, auf spielerische Weise Quellcodes zu erkunden und gleichz
 - animierte Gifs aus Screenshots der 3D-Animation erstellen
 
 Die [Anleitung](docs/manual.md) ist in den Docs-Ordner verschoben.
+
+## Installation
+Zip-Archiv herunterladen, entpacken und auf eigenem Server hochladen.
+
+Kommandozeile:
+```bash
+cd ~/html
+git clone https://github.com/raffaelj/3div.git
+```
+
+anschließend eigene-domain.de/3div aufrufen
 
 ### To Do
 3Div ist mein erstes Javascript-Projekt, weshalb die Entwicklung nur langsam vorangeht und noch einige Fehler zu beheben, Sicherheitslücken zu schließen und Features hinzuzufügen sind.
