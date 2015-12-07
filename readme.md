@@ -1,6 +1,8 @@
 3Div
 ====
 
+[Demo](http://test.npraesenz.de/3div/)
+
 ## Idee
 3Div ist ein 2D-Editor für die 3D-Untersuchung von Firefox, bzw. das leider nicht mehr weiterentwickelte Firefox-Addon Tilt.
 
@@ -66,5 +68,5 @@ anschließend eigene-domain.de/3div aufrufen
 - [ ] Link generieren um Entwurf teilen zu können (ähnlich wie bei Mozilla Webmaker: [Thimble](https://thimble.mozilla.org/), [X-Ray-Goggles](https://webmaker.org/goggles))
 - [ ] Sammlung mit Internetseiten, die spannend in 3D aussehen
 
-Autor des 3Div-Scripts: Raffael Jesche
-Quellcode: [3Div](https://github.com/raffaelj/3div) - [Fork me on Github](https://github.com/raffaelj/3div)
+Autor des 3Div-Scripts: [Raffael Jesche](http://raffaeljesche.de)  
+Quellcode: [3Div](https://github.com/raffaelj/3div)
