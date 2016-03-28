@@ -14,6 +14,9 @@ Die Idee dahinter ist, auf spielerische Weise Quellcodes zu erkunden und gleichz
  - Javascript-Konsole
 - Export für Blender
 - animierte Gifs aus Screenshots der 3D-Animation erstellen
+- Screenshots machen, arrangieren, kurzer Exkurs 72dpi/300dpi
+  - ausdrucken - etwas in der Hand haben für zu Hause
+  - Seite einrichten --> Hintergrund drucken
 
 Die [Anleitung](docs/manual.md) ist in den Docs-Ordner verschoben.
 
