@@ -1,7 +1,7 @@
 3Div
 ====
 
-[Demo](http://test.npraesenz.de/3div/)
+[Demo](http://3div.12px.de/)
 
 ## Idee
 3Div ist ein 2D-Editor für die 3D-Untersuchung von Firefox, bzw. das leider nicht mehr weiterentwickelte Firefox-Addon Tilt.
@@ -39,7 +39,7 @@ anschließend eigene-domain.de/3div aufrufen
 - [ ] Direkteingabe um Objekt zu ändern --> bis jetzt Firefox-Entwickler-Tools
 - [ ] verwendete Farben speichern/auslesen und wiederverwenden --> bis jetzt Firefox-Entwickler-Tools-ColorPicker + externe Hex2Dec-Umrechnung
 - [ ] Autosave
-- [ ] Präsentations-Galerie --> angefangen auf http://raffaelj.github.io
+- [ ] Präsentations-Galerie
 - [x] grobe Dokumentation
 - [ ] ausführliche Dokumentation
 - [ ] Option: Bilder einfügen
