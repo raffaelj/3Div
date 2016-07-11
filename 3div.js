@@ -76,7 +76,7 @@ function create3Div(){
 	var iconGrid = d.createElement("span");
 	iconGrid.id = "ddiv_icon_grid";
 	iconGrid.classList.add("ddiv_icon_grid");
-	iconGrid.title = "Raster aus-/einblenden";
+	iconGrid.title = "Rasteransicht aus-/einblenden - verschieben von Objekten mit der Maus ist dann nicht mehr möglich";
 	iconGrid.innerHTML = "&nbsp;";
 	overlay.appendChild(iconGrid);
 	
