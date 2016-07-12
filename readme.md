@@ -71,5 +71,5 @@ anschließend eigene-domain.de/3div aufrufen
 - [ ] Link generieren um Entwurf teilen zu können (ähnlich wie bei Mozilla Webmaker: [Thimble](https://thimble.mozilla.org/), [X-Ray-Goggles](https://webmaker.org/goggles))
 - [ ] Sammlung mit Internetseiten, die spannend in 3D aussehen
 
-Autor des 3Div-Scripts: [Raffael Jesche](http://raffaeljesche.de)  
+Autor des 3Div-Scripts: [Raffael Jesche](http://www.raffael.one) 
 Quellcode: [3Div](https://github.com/raffaelj/3div)
