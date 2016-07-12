@@ -1,20 +1,13 @@
-<img alt="3Div-Logo" src="img/3div_logo_100.png" style="float:left;margin:0 10px 10px 0" />
+<img alt="3Div-Logo" src="img/3div_logo_100.png" style="float:right;margin:0px 0px 10px 10px" />
 
 ## 3Div - Hilfeseite
 Mit der Taste <kbd>H</kbd> oder mit einem Klick auf das Fragezeichen oben rechts im Browserfenster kannst du diese Hilfeseite immer wieder aufrufen.
 
 ## Anleitung
 
+- [Installation siehe unten](#installation)
 - neue Objekte können über das Formularfeld eingefügt werden
 - mit der Maus können die Objekte bewegt werden
-
-Hier soll noch eine detaillierte Anleitung hin.
-
-Hier sollen noch Screenshots für die wichtigsten Funktionen hin.
-
-ANLEITUNG FÜR 3D-ANSICHT FEHLT NOCH
-Bis dahin Anleitung auf der [Mozilla-Hilfe-Seite](https://developer.mozilla.org/de/docs/Tools/3D_untersuchung)
-
 
 ### Tastaturkürzel:
 <kbd>H</kbd> = help, Hilfe ein-/ausblenden
@@ -30,12 +23,6 @@ Bis dahin Anleitung auf der [Mozilla-Hilfe-Seite](https://developer.mozilla.org/
 <kbd>N</kbd> = new, alle Objekte löschen, neues Dokument beginnen
 <kbd>L</kbd> = load, Dokument laden
 <kbd>S</kbd> = save, Dokument speichern
-
-### Bekannte Fehler
-- Wenn das Raster ausgeblendet ist, lassen sich die Objekte nicht mehr mit dem Lasso auswählen und beim Verschieben mit der Maus werden die Blöcke an den oberen Rand verschoben --> html, body und main haben keine Höhe, weshalb sich die Berechnung der Position des Elements auf nichts bezieht.
-- Zu viele Objekte auf einmal zu verschieben oder auch das 3D-Rendering in der 3D-Ansicht zwingen ältere Computer schonmal in die Knie und wenn es doof läuft, stürzt der Browser ab.
-  - --> regelmäßig zwischenspeichern!
-  - --> parallel javascriptlastige Browserspiele im nächsten Tab spielen zu müssen erhöht das Risiko, dass der Browser überlastet ist. 
 
 ### Farbschema
 der 3D-Darstellung im Firefox-Inspektor (3D-/Seitenansicht)
@@ -73,5 +60,23 @@ der 3D-Darstellung im Firefox-Inspektor (3D-/Seitenansicht)
 - sup, sub, abbr, cite, acronym, blockquote, code, address - dunkelgrau
 - strong - dunkelgrau
 
-Autor des 3Div-Scripts: Raffael Jesche
+### Bekannte Fehler
+- Wenn das Raster ausgeblendet ist, lassen sich die Objekte nicht mehr mit dem Lasso auswählen und beim Verschieben mit der Maus werden die Blöcke an den oberen Rand verschoben --> html, body und main haben keine Höhe, weshalb sich die Berechnung der Position des Elements auf nichts bezieht.
+- Zu viele Objekte auf einmal zu verschieben oder auch das 3D-Rendering in der 3D-Ansicht zwingen ältere Computer schonmal in die Knie und wenn es doof läuft, stürzt der Browser ab.
+  - --> regelmäßig zwischenspeichern!
+  - --> parallel javascriptlastige Browserspiele im nächsten Tab spielen zu müssen erhöht das Risiko, dass der Browser überlastet ist. 
+
+## Installation
+
+- Für die 3D-Ansicht wird zunächst der Browser [Firefox](https://www.mozilla.org/de/firefox/new/) benötigt. Seit der Version 47 ist die integrierte 3D-Darstellung leider abgeschafft worden.
+- Entweder lädst du dir eine alte Version des [Firefox Portable 46](https://sourceforge.net/projects/portableapps/files/Mozilla%20Firefox%2C%20Portable%20Ed./Mozilla%20Firefox%2C%20Portable%20Edition%2046.0.1/FirefoxPortable_46.0.1_German.paf.exe/download) herunter oder du
+- installierst als nächstes das Addon [Tilt 3D](https://addons.mozilla.org/de/firefox/addon/tilt/).
+- Nach der Installation kannst über die Navigation "Extras" --> "Web-Entwickler" --> "Tilt" die 3D-Ansicht aktivieren.
+- Leider hat das Addon einen Fehler, weshalb das Tastaturkürzel nicht funktioniert. Um dies zu ändern muss zunächst das Add-on [Menu Wizard](https://addons.mozilla.org/de/firefox/addon/s3menu-wizard/) installiert werden. Dort kannst du dann den neuen Shortcut, z. B. <kbd>Strg</kbd> + <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>M</kbd> erstellen. Anschließend lässt sich Tilt auch mit dem Kürzel starten.
+
+
+
+Autor des 3Div-Scripts: [Raffael Jesche](http://www.raffael.one)
 Quellcode: [3Div](https://github.com/raffaelj/3div) - [Fork me on Github](https://github.com/raffaelj/3div)
+
+[Impressum](http://www.raffael.one/impressum) [Datenschutz](http://www.raffael.one/datenschutz)
