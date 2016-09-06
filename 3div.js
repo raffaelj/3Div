@@ -21,7 +21,7 @@
 // Überprüfung von Benutzereingaben stattfindet und noch ein Login-System 
 // hinzukommen soll.
 
-// Warnung beim Schließen der Seitenleiste
+// Warnung beim Schließen der Seite
 window.onbeforeunload = function() {
     return 'Hast du auch alles abgespeichert?';
 }
@@ -111,10 +111,18 @@ function create3Div(){
 	
 	// Datei beim Start laden
 	phpToNodeList();
+	
+	// Hilfe einmalig beim Start laden
+	txtRequestToHelp("docs/manual.md");
 }
 
 create3Div();
 
+// beim lokalen Entwickeln
+if (document.location.hostname == "localhost") {
+	hideHelp();// Hilfe beim Start ausblenden
+	window.onbeforeunload = null;// Warnung beim Seite schließen deaktivieren
+}
 
 // Zeichenfläche: <main>
 var artboard = document.querySelector("[data-ddiv_artboard]");
@@ -549,7 +557,7 @@ document.getElementById("ddiv_icon_hide").addEventListener('click', function(){
 // Raster ein-/ausblenden
 document.getElementById("ddiv_icon_grid").addEventListener('click', toggleGrid);
 
-// Raster ein-/ausblenden
+// Hilfe ein-/ausblenden
 document.getElementById("ddiv_icon_help").addEventListener('click', showHelp);
 document.getElementById("ddiv_icon_close").addEventListener('click', showHelp);
 
@@ -1016,9 +1024,6 @@ function hideHelp(){
 		document.getElementById("ddiv_help_container").classList.add("ddiv_invisible");
 	}
 }
-
-//einmalig beim Start laden
-txtRequestToHelp("docs/manual.md");
 
 function txtRequestToHelp(url){
 	var request = new XMLHttpRequest();
