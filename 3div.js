@@ -367,6 +367,9 @@ function checkObjectTypeOfNewNode(creationProps, nodeProps){
 	if (creationProps.objectType == "circle"){
 		paintCircle(nodeProps, creationProps);
 	}
+	if (creationProps.objectType == "spiral"){
+		paintCircle(nodeProps, creationProps);
+	}
 	
 	// Objekt neu einlesen und selektierbar + verschiebbar machen
 	makeDraggable();
@@ -952,6 +955,26 @@ function paintCircle(nodeProps, creationProps){
 	// Kreiskoordinaten berechnen
 	var centerCoords = circle(startX, startY, nodeProps.radius, nodeProps.steps);
 	
+	// Anzahl Ebenen --> Spirale/Wendel
+	if (creationProps.objectType == "spiral"){
+		var key = 0;
+		for (var i = 0; i < creationProps.layers; i++){
+			// Prüfe, ob Ebene existiert
+			checkIfLayerExists(nodeProps.z + i);
+			
+			// Blöcke einfügen
+			// console.log(key);
+			nodeProps.x = centerCoords[key].x;
+			nodeProps.y = centerCoords[key++].y;
+			nodeProps.groupid = groupId;
+			document.querySelector('[data-ddiv_layer="' + (nodeProps.z + i) + '"]')
+				.appendChild(createNewNode(nodeProps));
+			if (key >= nodeProps.steps){
+				key = 0;
+			}
+		}
+	}
+	else {
 	// Anzahl Ebenen --> Schlauch
 	for (var i = 0; i < creationProps.layers; i++){
 		// Prüfe, ob Ebene existiert
@@ -959,12 +982,14 @@ function paintCircle(nodeProps, creationProps){
 	
 		// Blöcke einfügen
 		for (var key in centerCoords){
+			// console.log(key);
 			nodeProps.x = centerCoords[key].x;
 			nodeProps.y = centerCoords[key].y;
 			nodeProps.groupid = groupId;
-			document.querySelector('[data-ddiv_layer="' + (nodeProps.z + i) + '"]').appendChild(createNewNode(nodeProps));
+			document.querySelector('[data-ddiv_layer="' + (nodeProps.z + i) + '"]')
+				.appendChild(createNewNode(nodeProps));
+			}
 		}
-		// nodeProps.z = nodeProps.z + i;
 	}
 	
 }
@@ -980,6 +1005,11 @@ function circle(centerX, centerY, radius, steps){
 		}
 	}
 	return coords;
+}
+
+// Wendel/Spirale
+function paintSpiral(nodeProps, creationProps){
+	
 }
 
 
