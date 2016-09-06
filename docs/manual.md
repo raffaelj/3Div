@@ -1,6 +1,6 @@
 <img alt="3Div-Logo" src="img/3div_logo_100.png" style="float:right;margin:0px 0px 10px 10px" />
 
-## 3Div - Hilfeseite
+# 3Div - Hilfeseite
 
 Mit der Taste <kbd>H</kbd> oder mit einem Klick auf das Fragezeichen oben rechts im Browserfenster kannst du diese Hilfeseite immer wieder aufrufen.
 
