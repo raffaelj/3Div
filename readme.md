@@ -71,7 +71,7 @@ anschließend eigene-domain.de/3div aufrufen
 - [ ] evtl. Objekte rotieren mit CSS-Transform --> ist aber in 3D-Ansicht nicht gedreht
 - [ ] Link generieren um Entwurf teilen zu können (ähnlich wie bei Mozilla Webmaker: [Thimble](https://thimble.mozilla.org/), [X-Ray-Goggles](https://webmaker.org/goggles))
 - [ ] Sammlung mit Internetseiten, die spannend in 3D aussehen
-- WebGl direkt auf Seite anstatt mit Plugin, da seit FF47 die integrierte 3D-Untersuchung abgeschafft wurde
+- [ ] WebGl direkt auf Seite anstatt mit Plugin, da seit FF47 die integrierte 3D-Untersuchung abgeschafft wurde
 
 Autor des 3Div-Scripts: [Raffael Jesche](http://www.raffael.one) 
 Quellcode: [3Div](https://github.com/raffaelj/3div)
