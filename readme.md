@@ -31,7 +31,7 @@ git clone https://github.com/raffaelj/3div.git
 
 anschließend eigene-domain.de/3div aufrufen
 
-### To Do
+## To Do
 3Div ist mein erstes Javascript-Projekt, weshalb die Entwicklung nur langsam vorangeht und noch einige Fehler zu beheben, Sicherheitslücken zu schließen und Features hinzuzufügen sind.
 
 - [ ] selektierte Elemente kopieren <kbd>Strg</kbd> + <kbd>C</kbd> und <kbd>Strg</kbd> + <kbd>V</kbd>
@@ -49,6 +49,7 @@ anschließend eigene-domain.de/3div aufrufen
 - [x] Kreisfunktion
 - [ ] Wendelfunktion
 - [ ] Kugelfunktion
+- [ ] Felder-erzeugen-Funktion (z. B.  100px * 100px geteilt in 10 * 10 Blöcke)
 - [x] resizable --> Developer-Tools --> width und height anpassen
 - [ ] Quellcode serverseitig ausgeben, sodass er mit <kbd>Strg</kbd>+<kbd>U</kbd> sichtbar ist --> Reload nötig
 - [x] Tastaturkürzel
