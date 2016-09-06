@@ -1,6 +1,7 @@
 <img alt="3Div-Logo" src="img/3div_logo_100.png" style="float:right;margin:0px 0px 10px 10px" />
 
 ## 3Div - Hilfeseite
+
 Mit der Taste <kbd>H</kbd> oder mit einem Klick auf das Fragezeichen oben rechts im Browserfenster kannst du diese Hilfeseite immer wieder aufrufen.
 
 ## Anleitung
@@ -10,6 +11,7 @@ Mit der Taste <kbd>H</kbd> oder mit einem Klick auf das Fragezeichen oben rechts
 - mit der Maus können die Objekte bewegt werden
 
 ### Tastaturkürzel:
+
 <kbd>H</kbd> = help, Hilfe ein-/ausblenden
 
 <kbd>Entf</kbd> = Entfernen, selektierte Objekte löschen
@@ -25,8 +27,11 @@ Mit der Taste <kbd>H</kbd> oder mit einem Klick auf das Fragezeichen oben rechts
 <kbd>S</kbd> = save, Dokument speichern
 
 ### Farbschema
+
 der 3D-Darstellung im Firefox-Inspektor (3D-/Seitenansicht)
+
 #### bereits aktiviert
+
 - span - #67E46F - grün
 - div - #5DC8CD - türkis
 - a - #123EAB - dunkelblau
@@ -36,6 +41,7 @@ der 3D-Darstellung im Firefox-Inspektor (3D-/Seitenansicht)
 - ul - #4671D5 - mittel-dunkelblau
 
 #### weitere
+
 - html - #FFF - grau
 - head/body - #E667AF - hellgrau
 - title - #CD0074 - magenta
