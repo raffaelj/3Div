@@ -124,6 +124,22 @@ if (document.location.hostname == "localhost") {
 	window.onbeforeunload = null;// Warnung beim Seite schließen deaktivieren
 }
 
+// console.log überschreiben und auf Screen ausgeben
+(function () {
+    var old = console.log;
+    var logger = document.getElementById('ddiv_log');
+    console.log = function (message) {
+        if (typeof message == 'object') {
+            logger.innerHTML += (JSON && JSON.stringify ? JSON.stringify(message) : message) + '<br />';
+            //logger.value += (JSON && JSON.stringify ? JSON.stringify(message) : message) + '<br />';
+        } else {
+            logger.innerHTML += message + '<br />';
+            //logger.value += message + '<br />';
+        }
+				$("#ddiv_log").animate({ scrollTop: $("#ddiv_log").prop("scrollHeight") - $("#ddiv_log").height() }, 00);
+    }
+})();
+
 // Zeichenfläche: <main>
 var artboard = document.querySelector("[data-ddiv_artboard]");
 // console.log(artboard);
@@ -688,7 +704,7 @@ function makeSelectable(){
 				if (event.shiftKey == true){//Shift-Taste gedrückt
 					// if (groupId !== null){
 					if (groupId !== 'undefined'){
-						console.log("groupId: " + groupId);
+						//console.log("groupId: " + groupId);
 						$("[data-ddiv_groupid=" + groupId + "]").addClass(selectClass);//alle Blöcke mit selber Gruppen-ID selektieren
 					}
 				}//Ende Shift-Taste gedrückt
@@ -1076,3 +1092,5 @@ function txtRequestToHelp(url){
 	};
 	request.send();
 }
+
+
