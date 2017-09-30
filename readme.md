@@ -1,6 +1,12 @@
 3Div
 ====
 
+not maintained anymore
+
+Das Projekt wird nicht mehr weiterentwickelt, da u. a. Firefox das 3D-Untersuchungtstool aus dem Standard-Toolset entfernt hat und ich außerdem andere Projekte im Kopf habe.
+
+--------------------------
+
 [Demo](http://3div.12px.de/)
 
 ## Idee
